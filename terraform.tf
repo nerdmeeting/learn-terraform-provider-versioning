@@ -2,19 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 
 terraform {
-  /* Uncomment this block to use Terraform Cloud for this tutorial
   cloud {
-    organization = "organization-name"
+    organization = "nerdmeeting-cloud1"
     workspaces {
       name = "learn-terraform-provider-versioning"
     }
   }
-  */
 
   required_providers {
     random = {
       source  = "hashicorp/random"
-      version = "3.1.0"
+      version = ">= 3.1.0"
     }
 
     aws = {
